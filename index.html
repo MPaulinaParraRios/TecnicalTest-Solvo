@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="barralateral" class=" col-sm-2 col-md-2 col-md-2 col-lg-2 col-xl-2  ">
+              <div class="log">
+                <img src="./img/Solvo-Logo-RGB.svg" alt="">
+              </div>  
+              <br><br><br>
+              <div class="btnM">
+                <button class="btonMenu" ><img style="width: 30%; height: 40%;" src="./img/bx-user.svg" alt="">Applicants</button>
+                <button class="btonMenu" ><img style="width: 30%; height: 40%;" src="./img/bx-briefcase-alt.svg" alt="">Users</button>
+                <button class="btonMenu" ><img style="width: 30%; height: 40%;" src="./img/bx-briefcase-alt.svg" alt="">Clients</button>
+                <button class="btonMenu" ><img style="width: 30%; height: 40%;" src="./img/bx-briefcase-alt.svg" alt="">Positions</button>
+                <button class="btonMenu" ><img style="width: 30%; height: 40%;" src="./img/bx-line-chart.svg" alt="">Statistics</button>
+                <button class="btonMenu" ><img style="width: 30%; height: 40%;" src="./img/bx-envelope.svg" alt="">Messages</button>
+                <br><br><br><br><br>
+                <button class="btonMenu" ><img style="width: 30%; height: 40%;" src="./img/bx-log-out.svg" alt="">Logout</button>                         
+              </div>  
+            </div>
+            <div class=" tabla col-sm-10 col-md-8 col-md-8 col-lg-8 col-xl-8 bg-white">
+              <div class="contnav">
+                <div class="menuh">
+                  <img id="menuh"  src="./img/bx-menu.svg" alt="">
+                </div>
+                <img id="mensaje" src="./img/bx-envelope.svg" style="height: 30px; width: 30px;" alt="">
+                <div class="cargo">
+                  <div>
+                    <h4>Laura Muñoz</h4>
+                    <h5>ADMINISTRADOR</h5>
+                  </div>
+                </div>
+                <div><img id="user" src="./img/bxs-user-circle.svg" style="height: 30px; width: 30px;" alt=""></div>
+              </div>
+              <div class="submenu">
+                <h3>Talent Pool</h3>
+                <button id="app" >CREATE NEW</button>
+              </div>
+              <div class="nav">
+                <nav class="navbar bg-body-tertiary">
+                  <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="What are you loking for?" aria-label="Search">
+                    </form>
+                  </div>
+                </nav>
+                <select class="form-select" style="height: 38px;" aria-label="Default select example">
+                  <option selected>Name</option>
+                  <option value="1">Juan Gonzales</option>
+                  <option value="2">Adriana Ocampo</option>
+                  <option value="3">Elkin Clavijo</option>
+                </select>
+              </div>
+              <div class="busq">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Bulk Actions</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <button id="app">APPLY</button>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#">10</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+                <h2 id="h2t">Users</h2>
+                
+                <table class="table ">
+                    <thead>
+                        <th></th>
+                        <th class="centrado" style="color:rgb(74, 74, 76)">NAME</th>
+                        <th class="centrado" style="color:rgb(74, 74, 76)">EMAIL</th>
+                        <th class="centrado" style="color:rgb(74, 74, 76)">ROLE</th>
+                        <th class="centrado" style="color:rgb(74, 74, 76)">OCEAN</th>
+                        <th class="centrado" style="color:rgb(74, 74, 76)">ACTIONS</th>
+                    </thead>
+                    <tbody class="infTable">
+                        <tr>
+                          <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault"></th>
+                            <td class="centrado" style="color:rgb(74, 74, 76)">Juan Gonzalez</td>
+                            <td class="centrado" style="color:rgb(74, 74, 76)">juan.gromero@solvoglobal.com</td>
+                            <td class="centrado" style="color:rgb(74, 74, 76)">Orange Recruiter</td>
+                            <td class="centrado"><button type="button" style="width: 120PX;height: 40px;" class="btn btn-outline-danger">ORANGE</button></td>
+                            <td class="centrado"id="iconos" ><img src="./img/bx-trash.svg" style="width: 17px;height: 17px;" alt="">
+                              <img src="./img/bx-envelope.svg" style="width: 17px;height: 17px;" alt="">
+                              <img src="./img/bx-edit-alt.svg" style="width: 17px;height: 17px;" alt=""></td>
+                        </tr>
+                        <tr>
+                          <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault"></th>
+                          <td class="centrado" style="color:rgb(74, 74, 76)">Juan Gonzalez</td>
+                          <td class="centrado" style="color:rgb(74, 74, 76)">juan.gromero@solvoglobal.com</td>
+                          <td class="centrado" style="color:rgb(74, 74, 76)">Orange Recruiter</td>
+                          <td class="centrado"><button type="button" style="width: 120PX;height: 40px;" class="btn btn-outline-danger">ORANGE</button></td>
+                          <td class="centrado"id="iconos" ><img src="./img/bx-trash.svg" style="width: 17px;height: 17px;" alt="">
+                            <img src="./img/bx-envelope.svg" style="width: 17px;height: 17px;" alt="">
+                            <img src="./img/bx-edit-alt.svg" style="width: 17px;height: 17px;" alt=""></td>
+                      </tr>
+                      <tr>
+                        <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault"></th>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">Juan Gonzalez</td>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">juan.gromero@solvoglobal.com</td>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">Blue Recruiter</td>
+                        <td class="centrado"><button type="button" style="width: 120PX;height: 40px;" class="btn btn-outline-primary">BLUE</button></td>
+                        <td class="centrado"id="iconos" ><img src="./img/bx-trash.svg" style="width: 17px;height: 17px;" alt="">
+                          <img src="./img/bx-envelope.svg" style="width: 17px;height: 17px;" alt="">
+                          <img src="./img/bx-edit-alt.svg" style="width: 17px;height: 17px;" alt=""></td>
+                      </tr>
+                      <tr>
+                        <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault"></th>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">Juan Gonzalez</td>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">juan.gromero@solvoglobal.com</td>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">Blue Recruiter</td>
+                       <td class="centrado"><button type="button" style="width: 120PX;height: 40px;" class="btn btn-outline-primary">BLUE</button></td></td>
+                       <td class="centrado"id="iconos" ><img src="./img/bx-trash.svg" style="width: 17px;height: 17px;" alt="">
+                        <img src="./img/bx-envelope.svg" style="width: 17px;height: 17px;" alt="">
+                        <img src="./img/bx-edit-alt.svg" style="width: 17px;height: 17px;" alt=""></td>
+                      </tr>
+                      <tr>
+                        <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault"></th>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">Juan Gonzalez</td>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">juan.gromero@solvoglobal.com</td>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">Administrador</td>
+                        <td class="centrado"><button type="button" style="width: 120PX;height: 40px;"class="btn btn-outline-secondary">NO OCEAN</button></td>
+                        <td class="centrado"id="iconos" ><img src="./img/bx-trash.svg" style="width: 17px;height: 17px;" alt="">
+                          <img src="./img/bx-envelope.svg" style="width: 17px;height: 17px;" alt="">
+                          <img src="./img/bx-edit-alt.svg" style="width: 17px;height: 17px;" alt=""></td>
+                      </tr>
+                      <tr>
+                        <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault"></th>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">Juan Gonzalez</td>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">juan.gromero@solvoglobal.com</td>
+                        <td class="centrado" style="color:rgb(74, 74, 76)">Data Entry</td>
+                       <td class="centrado"><button type="button" style="width: 120PX;height: 40px;" class="btn btn-outline-secondary">NO OCEAN</button></td>
+                       <td class="centrado"id="iconos" ><img src="./img/bx-trash.svg" style="width: 17px;height: 17px;" alt="">
+                        <img src="./img/bx-envelope.svg" style="width: 17px;height: 17px;" alt="">
+                        <img src="./img/bx-edit-alt.svg" style="width: 17px;height: 17px;" alt=""></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
